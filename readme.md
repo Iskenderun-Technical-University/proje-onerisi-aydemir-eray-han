@@ -1,13 +1,10 @@
 # Fragmania
-
 ## _Film bilgileri ve fragmanları_
 
 ## Projenin Amacı
-
 Projenin amacı internet erişimimizin olduğu her yerde yeni sineme filimlerinden ve bu filimlerin detaylarından haberdar olmak.
 
 ## Teknik Detayları
-
 Proje React Native kullanılarak cross platform desteğiyle hazırlanacaktır.Veriler themoviedb api sisteminden alınacaktır.
 
 ## Özellikler
@@ -18,10 +15,8 @@ Proje React Native kullanılarak cross platform desteğiyle hazırlanacaktır.Ve
 - Oyuncular
 - Gelişmiş Arama Sistemi
 
-## Use Case Diyagramı
-
-....
+## Diagram
+![enter image description here](https://i.ibb.co/G707Z7g/usecasediagram.png)
 
 ## Kişiler
-
 Aydemir Eray Han
