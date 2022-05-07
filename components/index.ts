@@ -1,8 +1,10 @@
+import Header from "./Header/Header";
 import Trailers from "./Trailers/Trailers";
 import Populers from "./Populers/Populers";
-import SBItem from "./SbItem/SbItem";
+import MovieCard from "./MovieCard/MovieCard";
 export default {
   Trailers,
   Populers,
-  SBItem,
+  MovieCard,
+  Header,
 };
