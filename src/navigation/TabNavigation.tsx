@@ -6,7 +6,12 @@ type Props = {};
 const Tab = createBottomTabNavigator();
 export default function TabNavigation({}: Props) {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={{
+        tabBarInactiveBackgroundColor: "#222b45",
+        tabBarActiveBackgroundColor: "#222b45",
+      }}
+    >
       <Tab.Screen
         name="Home"
         component={Home}

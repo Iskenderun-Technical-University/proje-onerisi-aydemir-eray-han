@@ -1,6 +1,8 @@
 import { StyleSheet } from "react-native";
-import { Avatar, Layout, Text } from "@ui-kitten/components";
+import { Avatar, Divider, Drawer, Layout, Text } from "@ui-kitten/components";
 import { SafeAreaView } from "react-native-safe-area-context";
+import Trailers from "../../components/Trailers/Trailers";
+import Populers from "../../components/Populers/Populers";
 type Props = {};
 
 export default function Home({}: Props) {
@@ -11,14 +13,8 @@ export default function Home({}: Props) {
           <Text category={"p1"}>Hosgeldin film sever</Text>
           <Text category={"h3"}>Fragmania</Text>
         </Layout>
-        <Layout>
-          <Avatar
-            size="giant"
-            source={{
-              uri: "https://www.themoviedb.org/t/p/w710_and_h400_multi_faces/gD830J0sf5gEeZvzkRVPdGxJmSR.jpg",
-            }}
-          />
-        </Layout>
+        <Trailers />
+        <Populers />
       </SafeAreaView>
     </Layout>
   );
