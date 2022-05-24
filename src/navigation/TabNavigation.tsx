@@ -2,6 +2,7 @@ import { StyleSheet } from "react-native";
 import { Icon, useTheme } from "@ui-kitten/components";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from "../screens/Home";
+import MainNavigation from "./MainNavigation";
 type Props = {};
 const Tab = createBottomTabNavigator();
 export default function TabNavigation({}: Props) {
@@ -24,7 +25,7 @@ export default function TabNavigation({}: Props) {
     >
       <Tab.Screen
         name="Home|film-outline"
-        component={Home}
+        component={MainNavigation}
         options={{ headerShown: false, tabBarLabel: "Fragmanlar" }}
       />
       <Tab.Screen

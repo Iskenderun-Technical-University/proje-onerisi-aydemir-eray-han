@@ -2,8 +2,10 @@ import { StyleSheet, View } from "react-native";
 import React from "react";
 import { Layout, Text, ViewPager } from "@ui-kitten/components";
 import MovieCard from "../MovieCard/MovieCard";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Populers() {
+  const navigation = useNavigation();
   const [selectedIndex, setSelectedIndex] = React.useState(0);
   return (
     <View>
@@ -19,6 +21,7 @@ export default function Populers() {
           }
           title={"Peaky Blinders"}
           date={"12-09-2013"}
+          onPress={() => navigation.navigate("Detail", { key: "Detail" })}
         />
         <MovieCard
           id={1}
@@ -27,6 +30,7 @@ export default function Populers() {
           }
           title={"Game of Thrones"}
           date={"12-09-2014"}
+          onPress={() => navigation.navigate("Detail", { key: "Detail" })}
         />
       </ViewPager>
     </View>

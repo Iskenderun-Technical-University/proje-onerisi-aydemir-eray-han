@@ -7,18 +7,26 @@ import {
   useWindowDimensions,
 } from "react-native";
 import { Layout, Text } from "@ui-kitten/components";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
 type Props = {
   id: number;
   posterUrl: string;
   title: string;
   date: string;
+  onPress: () => void;
 };
 
-export default function MovieCard({ id, title, posterUrl, date }: Props) {
+export default function MovieCard({
+  id,
+  title,
+  posterUrl,
+  date,
+  onPress,
+}: Props) {
   const { height } = useWindowDimensions();
   return (
-    <Layout style={[styles.tab, { height: height * 0.6 }]}>
+    <TouchableOpacity onPress={onPress} style={[styles.tab, { height: height * 0.6 }]}>
       <ImageBackground
         source={{ uri: posterUrl }}
         style={[styles.posterBackground, { height: height * 0.6 }]}
@@ -32,7 +40,7 @@ export default function MovieCard({ id, title, posterUrl, date }: Props) {
           <Text category="c1">{date}</Text>
         </View>
       </ImageBackground>
-    </Layout>
+    </TouchableOpacity>
   );
 }
 

@@ -1,11 +1,7 @@
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import Navigation from "./src/navigation";
 import * as eva from "@eva-design/eva";
-import {
-  ApplicationProvider,
-  IconRegistry,
-  Layout,
-} from "@ui-kitten/components";
+import { ApplicationProvider, IconRegistry } from "@ui-kitten/components";
 import { EvaIconsPack } from "@ui-kitten/eva-icons";
 export default function App() {
   return (
