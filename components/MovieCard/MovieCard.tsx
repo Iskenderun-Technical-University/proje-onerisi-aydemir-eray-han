@@ -12,8 +12,8 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 type Props = {
   id: number;
   posterUrl: string;
-  title: string;
-  date: string;
+  title: string | undefined;
+  date: string | undefined;
   onPress: () => void;
 };
 
@@ -26,7 +26,10 @@ export default function MovieCard({
 }: Props) {
   const { height } = useWindowDimensions();
   return (
-    <TouchableOpacity onPress={onPress} style={[styles.tab, { height: height * 0.6 }]}>
+    <TouchableOpacity
+      onPress={onPress}
+      style={[styles.tab, { height: height * 0.6 }]}
+    >
       <ImageBackground
         source={{ uri: posterUrl }}
         style={[styles.posterBackground, { height: height * 0.6 }]}
