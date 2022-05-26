@@ -29,16 +29,18 @@ export default function Populers() {
         onSelect={(index) => setSelectedIndex(index)}
       >
         {movies &&
-          movies.map((movie) => (
-            <MovieCard
-              key={`movie-${movie.id}`}
-              id={1}
-              posterUrl={`https://www.themoviedb.org/t/p/w1280/${movie.poster_path}`}
-              title={movie.title}
-              date={movie.release_date}
-              onPress={() => navigation.navigate("Detail", { id: movie.id })}
-            />
-          ))}
+          movies
+            .slice(0, 10)
+            .map((movie) => (
+              <MovieCard
+                key={`movie-${movie.id}`}
+                id={1}
+                posterUrl={`https://www.themoviedb.org/t/p/w1280/${movie.poster_path}`}
+                title={movie.title}
+                date={movie.release_date}
+                onPress={() => navigation.navigate("Detail", { id: movie.id })}
+              />
+            ))}
       </ViewPager>
     </View>
   );
