@@ -27,7 +27,10 @@ Proje React Native kullanılarak cross platform desteğiyle hazırlanacaktır.Ve
 
 ## Proje Resimleri
 
-![picture1](assets/appimage1.png)
+<img src="assets/appimage1.png" alt="appimage1" style="height: 200px; width:100px;"/>
+<img src="assets/appimage2.png" alt="appimage1" style="height: 200px; width:100px;"/>
+<img src="assets/appimage3.png" alt="appimage1" style="height: 200px; width:100px;"/>
+<img src="assets/appimage4.png" alt="appimage1" style="height: 200px; width:100px;"/>
 
 ## Diagram
 
