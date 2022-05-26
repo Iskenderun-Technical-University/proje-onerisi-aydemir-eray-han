@@ -3,6 +3,7 @@ import { Icon, useTheme } from "@ui-kitten/components";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from "../screens/Home";
 import MainNavigation from "./MainNavigation";
+import Search from "../screens/Search";
 type Props = {};
 const Tab = createBottomTabNavigator();
 export default function TabNavigation({}: Props) {
@@ -30,7 +31,7 @@ export default function TabNavigation({}: Props) {
       />
       <Tab.Screen
         name="Search|search-outline"
-        component={Home}
+        component={Search}
         options={{ headerShown: false, tabBarLabel: "Ara" }}
       />
       <Tab.Screen

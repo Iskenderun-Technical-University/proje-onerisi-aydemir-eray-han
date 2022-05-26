@@ -4,7 +4,7 @@ import { Layout, Text } from "@ui-kitten/components";
 
 export default function Header() {
   return (
-    <Layout>
+    <Layout style={{ marginTop: 50 }}>
       <Text category={"p1"} status={"control"}>
         Hosgeldin film sever
       </Text>
